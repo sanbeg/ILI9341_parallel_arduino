@@ -5,8 +5,14 @@ void setup() {
   // put your setup code here, to run once:
   LCD_init();  
   LCD_clear(0xFF);
+  Serial.begin(9600);
 
+  unsigned long start = millis();
   EBU_color_bar_test();
+  unsigned long end = millis();
+
+  Serial.print("elapsed sec=");
+  Serial.println((end-start)/1000.0);
 
 }
 

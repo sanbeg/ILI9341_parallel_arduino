@@ -17,3 +17,19 @@ You can add files `ILI9341.h` and `ILI9341.cpp` to project directory.
 ## 2nd milestone
 * Implement RLE decoding for high resolution fonts or sprites
 * Implement touch screen capabilities
+
+# Timed tests
+
+With some added instrumentation, we can time how long it takes to run the demo and fill the 
+screen with stripes, in both the Arduino & Micropython ports on different boards using both
+generic (arduino or micropython) methods to write to the 8 parallel data pins, or bypassing the
+platform abstractions and using a platform-specific method which allows writing multiple pins at 
+once.
+
+| platform | board | emitter | seconds|
+| ---|---|---|---|
+| arduino | uno | avr | 1.91 |
+| arduino | uno | arduino | 7.95 |
+| micropython | g474re | stm | 6.32 |
+| micropython | g474re | mpy | 14.77 |
+| arduino | g474re | arduino | 0.43 |
