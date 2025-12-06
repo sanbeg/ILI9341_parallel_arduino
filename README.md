@@ -28,8 +28,8 @@ once.
 
 | platform | board | emitter | seconds|
 | ---|---|---|---|
-| arduino | uno | avr | 1.91 |
-| arduino | uno | arduino | 7.95 |
-| micropython | g474re | stm | 6.32 |
-| micropython | g474re | mpy | 14.77 |
-| arduino | g474re | arduino | 0.43 |
+| arduino | uno R3 | avr | 1.91 |
+| arduino | uno R3 | arduino | 7.95 |
+| micropython | nucleo g474re | stm | 6.32 |
+| micropython | nucleo g474re | mpy | 14.77 |
+| arduino | nucleo g474re | arduino | 0.43 |
